@@ -10,23 +10,31 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 0;
+    /* Changed from padding 2rem 1rem since the image is glued to the top or maybe not */
+}
+
+/* Looking at the image, the image is glued to the top of the browser or very close. */
+.header {
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
     max-width: 800px;
     width: 100%;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
-.image-container {
-    margin-bottom: 2.5rem;
-}
-
-.hero-image {
-    max-width: 100%;
-    height: auto;
-    /* This roughly matches the dimension ratio, depending on image 1.jpg */
+.main-content {
+    padding: 0 1rem;
 }
 
 .main-heading {
@@ -38,25 +46,26 @@ body {
 }
 
 .text-blue {
-    color: #1a75ff; /* A bright royal blue */
+    color: #1a75ff;
+    /* A bright royal blue */
 }
 
 .shadow {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.text-content {
+.details-section {
     margin-bottom: 3rem;
 }
 
-.text-content p {
+.details-section p {
     font-size: 0.95rem;
     line-height: 1.8;
     color: #7b7b7b;
     margin-bottom: 1.5rem;
 }
 
-.text-content p:last-child {
+.details-section p:last-child {
     margin-bottom: 0;
 }
 
@@ -64,31 +73,32 @@ body {
     color: #333333;
 }
 
-.bold {
+strong.text-dark {
     font-weight: 600;
 }
 
 .footer-divider {
+    border: none;
     height: 1px;
     background-color: #eaeaea;
-    max-width: 600px;
+    width: 500px;
     margin: 0 auto 1.5rem auto;
 }
 
-.footer-links {
+.footer-nav {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
 }
 
-.footer-links a {
+.footer-nav a {
     color: #1a75ff;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
 }
 
-.footer-links a:hover {
+.footer-nav a:hover {
     text-decoration: underline;
 }
