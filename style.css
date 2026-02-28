@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 2.5rem;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    /* This roughly matches the dimension ratio, depending on image 1.jpg */
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #0d0d0d;
+}
+
+.text-blue {
+    color: #1a75ff; /* A bright royal blue */
+}
+
+.shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.text-content {
+    margin-bottom: 3rem;
+}
+
+.text-content p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #7b7b7b;
+    margin-bottom: 1.5rem;
+}
+
+.text-content p:last-child {
+    margin-bottom: 0;
+}
+
+.text-dark {
+    color: #333333;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: #eaeaea;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: #1a75ff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
